@@ -24,8 +24,8 @@ public final class DeliveryCostLib {
         List<DeliveryCost> libs = new ArrayList<>();
         
         try {
-            Scanner scan = new Scanner(new File("C:/Java_Latihan/FileTarif.txt"));
-            
+//            Scanner scan = new Scanner(new File("C:/Java_Latihan/FileTarif.txt"));
+            Scanner scan = new Scanner(new File(DeliveryCostLib.class.getResource("/asset/FileTarif.txt").getFile()));
             while (scan.hasNextLine()) {
                 String next = scan.nextLine();
                 String[]data = next.split(",");

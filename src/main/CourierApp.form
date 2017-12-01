@@ -936,6 +936,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTNPrintActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BTNMasterData">
       <Properties>
@@ -949,6 +952,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTNMasterDataActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BTNInfo">
       <Properties>
@@ -962,6 +968,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTNInfoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="packagePaymentCashRadio">
       <Properties>

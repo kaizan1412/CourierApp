@@ -811,14 +811,29 @@ public class CourierApp extends javax.swing.JFrame {
         BTNPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/print.png"))); // NOI18N
         BTNPrint.setToolTipText("Print Transaction");
         BTNPrint.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTNPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNPrintActionPerformed(evt);
+            }
+        });
 
         BTNMasterData.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/list.png"))); // NOI18N
         BTNMasterData.setToolTipText("Master Data");
         BTNMasterData.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTNMasterData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNMasterDataActionPerformed(evt);
+            }
+        });
 
         BTNInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/info.png"))); // NOI18N
         BTNInfo.setToolTipText("About and Help");
         BTNInfo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTNInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNInfoActionPerformed(evt);
+            }
+        });
 
         paymentButtonGroup.add(packagePaymentCashRadio);
         packagePaymentCashRadio.setText("Cash");
@@ -1367,6 +1382,21 @@ public class CourierApp extends javax.swing.JFrame {
         report.setReceiver(receiver);
 //        report.set
     }//GEN-LAST:event_BTNSaveActionPerformed
+
+    private void BTNMasterDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNMasterDataActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Page doesn't available now");
+    }//GEN-LAST:event_BTNMasterDataActionPerformed
+
+    private void BTNPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNPrintActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Page doesn't available now");
+    }//GEN-LAST:event_BTNPrintActionPerformed
+
+    private void BTNInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNInfoActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Page doesn't available now");
+    }//GEN-LAST:event_BTNInfoActionPerformed
 
     /**
      * @param args the command line arguments

@@ -5,7 +5,10 @@
  */
 package main;
 
+import dao.DeliveryCostLib;
 import dao.ResiNoGenerator;
+import entity.DeliveryCost;
+import java.util.List;
 
 /**
  *
@@ -18,7 +21,12 @@ public class tescode {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("No Resi: "+ ResiNoGenerator.generateResiNumber());
+//        System.out.println("No Resi: "+ ResiNoGenerator.generateResiNumber());
+        List<DeliveryCost> cost = DeliveryCostLib.costLib();
+        
+        for (DeliveryCost deliveryCost : cost) {
+            System.out.println("Kota: " + deliveryCost.getDestination());
+        }
     }
     
 }
